@@ -43,19 +43,17 @@ body {
         max-width: 80%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         .intro__contextual {
             min-width: 50%;
             max-width: 60%;
             h1 {
-                position: relative;
                 font-family: 'Poppins-Bold', sans-serif;
                 font-size: 3.3em;
                 padding: 0px 150px 0px 0px;
                 line-height: 1.2;
             }
             p {
-                position: relative;
                 font-size: 0.9em;
                 padding-right: 200px;
             }
@@ -88,6 +86,7 @@ body {
                 border-radius: 10px;
                 padding: 30px 30px 20px 30px;
                 input {
+                    color: hsl(249, 10%, 26%);
                     font-family: 'Poppins-SemiBold', sans-serif;
                     border: 1px solid;
                     border-color: hsl(249, 14%, 63%);
@@ -97,7 +96,7 @@ body {
                 }
                 .intro__subscription__infos-btn {
                     font-family: 'Poppins-Medium', sans-serif;
-                    font-size: 16px;
+                    font-size: 13px;
                     background-color: hsl(154, 59%, 51%);
                     padding: 10px 10px 10px 10px;
                     margin-bottom: 20px;
@@ -118,6 +117,40 @@ body {
             }
         }
 
+    }
+    @media (max-width: 900px) {
+        .intro {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .intro__contextual {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 90%;
+                max-width: 90%;
+                h1 {
+                    text-align: center;
+                    font-family: 'Poppins-Bold', sans-serif;
+                    font-size: 2em;
+                    padding: 0px 0px 0px 0px;
+                    line-height: 1.2;
+                }
+                p {
+                    text-align: center;
+                    font-size: 0.9em;
+                    padding-right: 0px;
+                }
+            }
+            .intro__subscription {
+                min-width: 85%;
+                max-width: 90%;
+                min-height: 100%;
+            }
+            
+        }
+        
     }
 
     .attribution { 
