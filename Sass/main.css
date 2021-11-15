@@ -108,7 +108,7 @@ body .intro .intro__subscription .intro__subscription__price-btn span {
   font-family: 'Poppins-Bold', sans-serif;
 }
 
-body .intro .intro__subscription .intro__subscription__infos {
+body .intro .intro__subscription #intro__subscription__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +121,7 @@ body .intro .intro__subscription .intro__subscription__infos {
   padding: 30px 30px 20px 30px;
 }
 
-body .intro .intro__subscription .intro__subscription__infos input {
+body .intro .intro__subscription #intro__subscription__form input {
   color: #3e3c49;
   font-family: 'Poppins-SemiBold', sans-serif;
   border: 1px solid;
@@ -131,7 +131,7 @@ body .intro .intro__subscription .intro__subscription__infos input {
   margin-bottom: 15px;
 }
 
-body .intro .intro__subscription .intro__subscription__infos .intro__subscription__infos-btn {
+body .intro .intro__subscription #intro__subscription__form .intro__subscription__form-btn {
   font-family: 'Poppins-Medium', sans-serif;
   font-size: 13px;
   background-color: #38cc8c;
@@ -145,13 +145,13 @@ body .intro .intro__subscription .intro__subscription__infos .intro__subscriptio
           box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-body .intro .intro__subscription .intro__subscription__infos p {
+body .intro .intro__subscription #intro__subscription__form p {
   color: #b9b6d3;
   font-family: 'Poppins-SemiBold', sans-serif;
   font-size: 0.7em;
 }
 
-body .intro .intro__subscription .intro__subscription__infos p span {
+body .intro .intro__subscription #intro__subscription__form p span {
   color: #38cc8c;
 }
 
@@ -212,5 +212,25 @@ body .attribution {
 
 body .attribution a {
   color: #3e52a3;
+}
+
+.error-text {
+  font-size: 12px;
+  font-style: italic;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  color: #ff7a7a;
+}
+
+.error {
+  border: 2px solid #ff7a7a;
+  background: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.success {
+  border: 2px solid #38cc8c;
 }
 /*# sourceMappingURL=main.css.map */

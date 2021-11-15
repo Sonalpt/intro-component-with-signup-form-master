@@ -79,7 +79,7 @@ body {
                     font-family: 'Poppins-Bold', sans-serif;
                 }
             }
-            .intro__subscription__infos {
+            #intro__subscription__form {
                 display: flex;
                 flex-direction: column;
                 background-color: white;
@@ -94,7 +94,7 @@ body {
                     padding: 10px 30px 10px 10px;
                     margin-bottom: 15px;
                 }
-                .intro__subscription__infos-btn {
+                .intro__subscription__form-btn {
                     font-family: 'Poppins-Medium', sans-serif;
                     font-size: 13px;
                     background-color: hsl(154, 59%, 51%);
@@ -162,6 +162,26 @@ body {
         } 
     }
     
+}
+
+.error-text {
+    font-size: 12px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: hsl(0, 100%, 74%);
+}
+
+.error {
+    border: 2px solid hsl(0, 100%, 74%);
+    background: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.success {
+    border: 2px solid hsl(154, 59%, 51%);
 }
 
 

@@ -25,16 +25,24 @@
         <span>Try it free 7 days</span> then $20/mo. thereafter
       </button>
 
-      <div class="intro__subscription__infos">
-        <input type="text" id="fname" name="fname" placeholder="First Name"> 
-        <input type="text" id="lname" name="lname" placeholder="Last Name">
-        <input type="email" id="email" name="email" placeholder="Email Address">
-        <input type="password" id="password" name="password" placeholder="Password"> 
+      <form id="intro__subscription__form" name="intro__subscription__form">
 
-        <button class="intro__subscription__infos-btn">CLAIM YOUR FREE TRIAL</button>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <span class="error-text"></span>
+
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <span class="error-text"></span>
+
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <span class="error-text"></span>
+        
+        <input type="password" id="password" name="password" placeholder="Password"> 
+        <span class="error-text"></span>
+        
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" class="intro__subscription__form-btn">
 
         <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-      </div>
+      </form>
     </div>
 
 </main>
